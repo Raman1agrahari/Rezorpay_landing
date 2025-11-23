@@ -6,7 +6,7 @@ import HeroBottom from "./HeroBottom";
 const Hero = ({ onOpenModal }) => {
   return (
     <>
-      <HeroStrip />
+      <HeroStrip onOpenModal={onOpenModal} />
       <HeroMain onOpenModal={onOpenModal} />
       <HeroBottom />
     </>

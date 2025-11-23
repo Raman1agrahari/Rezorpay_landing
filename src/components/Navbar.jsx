@@ -8,7 +8,7 @@ const Navbar = ({ onOpenModal }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
+    <nav className="w-full bg-blue-50 shadow-sm fixed top-0 py-1.5 left-0 z-50">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center space-x-3">
@@ -18,15 +18,15 @@ const Navbar = ({ onOpenModal }) => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center flex-1 justify-between ml-10">
           <ul className="flex items-center gap-6 text-gray-800 font-semibold text-[15px]">
-          <li
-  className="hover:text-blue-600 cursor-pointer"
-  onClick={() => {
-    const section = document.getElementById('payments-section');
-    section?.scrollIntoView({ behavior: 'smooth' });
-  }}
->
-  Payments
-</li>
+            <li
+              className="hover:text-blue-600 cursor-pointer"
+              onClick={() => {
+                const section = document.getElementById('payments-section');
+                section?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Payments
+            </li>
             <li className="hover:text-blue-600 cursor-pointer">Banking+</li>
             <li className="hover:text-blue-600 cursor-pointer">Payroll</li>
             <li className="hover:text-blue-600 cursor-pointer">Engage</li>
