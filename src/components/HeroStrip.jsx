@@ -46,7 +46,7 @@ const HeroStrip = ({ onOpenModal }) => {
           <button
             onClick={() => onOpenModal("signup")}
             className="
-              px-4 py-[6px] bg-[#f5f9ff]
+              px-4 py-6px bg-[#f5f9ff]
               rounded-md text-blue-700 font-semibold
               hover:bg-blue-100 shadow-sm text-xs transition
             "
@@ -80,7 +80,7 @@ const HeroStrip = ({ onOpenModal }) => {
   </div>
 
   {/* RIGHT SECTION: Description and Sign Up Link */}
-  <div className="flex items-center bg-[#e7f0fa] justify-between flex-grow px-4 py-3">
+  <div className="flex items-center bg-[#e7f0fa] justify-between grow px-4 py-3">
     
     {/* Description Text */}
     <p className="text-gray-700 text-xs leading-snug">
