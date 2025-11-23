@@ -8,19 +8,16 @@ import Modal from './components/Modal';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalType, setModalType] = useState("signup"); // or "login"
+  const [modalType, setModalType] = useState("signup");  
 
-  // Modal open handler (with type)
   const openModal = (type) => {
     setModalType(type);
     setIsModalOpen(true);
   };
 
   const closeModal = () => setIsModalOpen(false);
-
   return (
     <div className="App">
-      {/* Show login/signup modal as per button */}
       <Navbar onOpenModal={openModal} />
       <Hero onOpenModal={openModal} />
       <Features />

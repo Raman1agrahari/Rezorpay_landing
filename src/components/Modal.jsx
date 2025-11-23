@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 const Modal = ({ isOpen, onClose, formType }) => {
-  // formType = "login" ya "signup"
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
     phone: '',
     businessName: '',
-    message: '', // Only for signup
-    password: '' // Only for login
+    message: '',
+    password: ''
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -21,7 +20,6 @@ const Modal = ({ isOpen, onClose, formType }) => {
     return () => window.removeEventListener('keydown', handleEsc);
   }, [onClose]);
 
-  // Reset on open/formType change
   useEffect(() => {
     setFormData({
       fullName: '',
@@ -44,8 +42,8 @@ const Modal = ({ isOpen, onClose, formType }) => {
     e.preventDefault();
     setIsSubmitting(true);
     setTimeout(() => {
-      alert(formType === "signup" 
-        ? 'Signup successful! We will contact you soon.' 
+      alert(formType === "signup"
+        ? 'Signup successful! We will contact you soon.'
         : 'Login successful!');
       setIsSubmitting(false);
       onClose();
@@ -65,7 +63,7 @@ const Modal = ({ isOpen, onClose, formType }) => {
             </h2>
             <button onClick={onClose} className="text-white hover:bg-white hover:bg-opacity-20 rounded-full p-2">
               <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
@@ -86,7 +84,7 @@ const Modal = ({ isOpen, onClose, formType }) => {
                 </label>
                 <input type="text" name="fullName" value={formData.fullName}
                   onChange={handleChange} required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"/>
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -94,7 +92,7 @@ const Modal = ({ isOpen, onClose, formType }) => {
                 </label>
                 <input type="email" name="email" value={formData.email}
                   onChange={handleChange} required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"/>
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -102,7 +100,7 @@ const Modal = ({ isOpen, onClose, formType }) => {
                 </label>
                 <input type="tel" name="phone" value={formData.phone}
                   onChange={handleChange} required pattern="[0-9]{10}"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"/>
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -110,7 +108,7 @@ const Modal = ({ isOpen, onClose, formType }) => {
                 </label>
                 <input type="text" name="businessName" value={formData.businessName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"/>
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -118,7 +116,7 @@ const Modal = ({ isOpen, onClose, formType }) => {
                 </label>
                 <textarea name="message" value={formData.message}
                   onChange={handleChange} rows="3"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 resize-none"/>
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 resize-none" />
               </div>
             </>
           ) : (
@@ -129,7 +127,7 @@ const Modal = ({ isOpen, onClose, formType }) => {
                 </label>
                 <input type="email" name="email" value={formData.email}
                   onChange={handleChange} required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"/>
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -137,7 +135,7 @@ const Modal = ({ isOpen, onClose, formType }) => {
                 </label>
                 <input type="password" name="password" value={formData.password}
                   onChange={handleChange} required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"/>
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" />
               </div>
             </>
           )}

@@ -28,8 +28,8 @@ const HeroStrip = ({ onOpenModal }) => {
           hidden md:flex items-center gap-2 justify-between flex-wrap
         "
       >
-        {/* LEFT — Accept + International Payments */}
-        <div className="flex items-center gap-2 text-sm ml-20 shrink-0 mr-5">
+        {/* LEFT part*/}
+        <div className="flex items-center gap-2 text-base ml-20 shrink-0 mr-5">
           <span className="font-medium text-gray-700">Accept</span>
           <span className="text-blue-600 font-semibold cursor-pointer hover:underline">
             International Payments
@@ -37,7 +37,7 @@ const HeroStrip = ({ onOpenModal }) => {
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="flex items-center gap-3 flex-1 ml-3 justify-end min-w-[220px] flex-wrap">
+        <div className="flex items-center gap-3 flex-1 ml-2 mr-3 justify-end min-w-[220px] flex-wrap">
 
           <span className="text-gray-700 text-sm whitespace-nowrap">
             Global cards, Apple Pay, bank transfers. Low fees, local support.
@@ -46,7 +46,7 @@ const HeroStrip = ({ onOpenModal }) => {
           <button
             onClick={() => onOpenModal("signup")}
             className="
-              px-4 py-6px bg-[#f5f9ff]
+              px-4 py-1.5 bg-[#f5f9ff]
               rounded-md text-blue-700 font-semibold
               hover:bg-blue-100 shadow-sm text-xs transition
             "
@@ -68,37 +68,28 @@ const HeroStrip = ({ onOpenModal }) => {
         </div>
       </div>
 
-  {/* MOBILE LAYOUT (Mimicking Screenshot structure) */}
-<div className="md:hidden w-full flex bg-[#f4f7f9]">
-  
-  {/* LEFT SECTION: 'Accept International Payments' with Light Blue Background */}
-  <div className="flex flex-col justify-center leading-snug px-4 py-3 bg-[#e7f0fa]">
-    <span className="text-blue-600 text-sm font-normal">Accept</span>
-    <span className="text-blue-600 text-sm font-normal -mt-1">
-      International Payments
-    </span>
-  </div>
+      {/* MOBILE LAYOUT  */}
+      <div className="md:hidden w-full flex bg-[#f4f7f9]">
+        <div className="flex flex-col justify-center leading-snug px-4 py-3 bg-[#e7f0fa]">
+          <span className="text-blue-600 text-sm font-normal">Accept</span>
+          <span className="text-blue-600 text-sm font-normal -mt-1">
+            International Payments
+          </span>
+        </div>
 
-  {/* RIGHT SECTION: Description and Sign Up Link */}
-  <div className="flex items-center bg-[#e7f0fa] justify-between grow px-4 py-3">
-    
-    {/* Description Text */}
-    <p className="text-gray-700 text-xs leading-snug">
-      Global cards, Apple Pay, bank transfers. Low fees, local support.
-    </p>
-
-    {/* Sign Up Link (Looks like a link) */}
-    <a 
-      href="#" 
-      className="text-blue-700 text-sm font-semibold whitespace-nowrap ml-4 hover:text-blue-800 transition"
-      onClick={() => onOpenModal("signup")} 
-    >
-      Sign Up Now
-    </a>
-
-  </div>
-
-</div>
+        <div className="flex items-center justify-between grow px-4 py-3 bg-[#e7f0fa]">
+          <p className="text-gray-700 text-xs leading-snug">
+            Global cards, Apple Pay, bank transfers. Low fees, local support.
+          </p>
+          <a
+            href="#"
+            className="text-blue-700 text-sm font-semibold whitespace-nowrap ml-4 hover:text-blue-800 transition"
+            onClick={() => onOpenModal("signup")}
+          >
+            Sign Up Now
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

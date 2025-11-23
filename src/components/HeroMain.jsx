@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroMain = ({ onOpenModal }) => {
   return (
-  <section className="pt-10 pb-5 bg-linear-to-br from-[#e9f1fe] via-[#f7faff] to-[#dde7f9] min-h-[630px] flex items-center">
+    <section className="pt-10 pb-5 bg-linear-to-br from-[#e9f1fe] via-[#f7faff] to-[#dde7f9] min-h-[630px] flex items-center">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 xl:px-20 grid lg:grid-cols-2 gap-16 items-center">
         {/* LEFT TEXT SECTION */}

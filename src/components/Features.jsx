@@ -29,7 +29,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="payments-part" className="py-10 bg-white">
+    <section id="payments-part" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
@@ -42,7 +42,7 @@ const Features = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="group p-6 rounded-2xl border border-gray-200 hover:border-transparent hover:shadow-2xl transition duration-300 transform hover:-translate-y-2"
             >

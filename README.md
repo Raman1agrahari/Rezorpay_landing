@@ -1,16 +1,45 @@
-# React + Vite
+# Razorpay-Style Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Razorpay-style landing page built as part of a frontend development task.
 
-Currently, two official plugins are available:
+##  Live Demo
+[[Deployment Link Here](https://rezorpay-landing.vercel.app)]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## GitHub Repository
+[[Repository Link Here](https://github.com/Raman1agrahari/Rezorpay_landing.git)]
 
-## React Compiler
+## Landing page 
+![Landing Page Screenshot](/screenshot1.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Overview
+This project is a fully responsive, modern UI landing page inspired by Razorpay’s official website.
+It includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Navigation Bar  
+- Hero Section (HeroStrip + HeroMain + HeroBottom)  
+- Features / Benefits Section  
+- Products Section  
+- Footer Section  
+- Login/Signup Modal
+
+---
+
+## 🛠️ Tech Stack / Frameworks Used
+
+- **React.js**
+- **Tailwind CSS**
+- **Vite**
+- **JavaScript (ES6+)**
+- **React Icons**
+
+---
+
+##  Setup Instructions
+
+### Clone the repository
+```bash
+git clone https://github.com/Raman1agrahari/Rezorpay_landing.git
+cd Rezorpay_landing
+```
